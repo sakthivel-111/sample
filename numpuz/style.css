@@ -50,7 +50,7 @@ h1 {
 
 button {
     padding: 10px 20px;
-    background-color: #e01ce0;
+    background-color: #095d7e;
     color: white;
     border: none;
     border-radius: 5px;
@@ -58,5 +58,5 @@ button {
 }
 
 button:hover {
-    background-color: #c0bd18;
+    background-color: #066646;
 }
