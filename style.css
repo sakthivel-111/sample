@@ -1,0 +1,133 @@
+/* Resetting styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #f9f9f9, #e0f7fa); /* Light gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.container {
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light white background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: slideUp 0.8s ease-out;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #4CAF50; /* Soft green color for the title */
+    animation: bounce 1s ease-in-out infinite;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+input, button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+    outline: none;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+input {
+    background-color: #f1f1f1; /* Light gray background for inputs */
+    color: #333;
+}
+
+button {
+    background-color: #4CAF50; /* Soft green for buttons */
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#account-info-section {
+    display: none;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#transaction-form {
+    margin-top: 20px;
+}
+
+#transactions {
+    margin-top: 20px;
+}
+
+#transaction-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#transaction-list li {
+    background-color: rgba(0, 0, 0, 0.05); /* Light background for transaction history */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#logout-btn {
+    background-color: #e74c3c; /* Red logout button */
+}
+
+#logout-btn:hover {
+    background-color: #c0392b;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

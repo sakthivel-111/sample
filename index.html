@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bank Account Management System</h1>
+        
+        <!-- Login Section -->
+        <div id="login-section">
+            <h2>Login</h2>
+            <input type="text" id="account-number" placeholder="Account Number" required>
+            <input type="password" id="pin" placeholder="PIN" required>
+            <button id="login-btn">Login</button>
+        </div>
+
+        <!-- Account Info Section -->
+        <div id="account-info-section" style="display:none;">
+            <h2>Welcome, <span id="account-name">User</span></h2>
+            <p>Your current balance: <span id="balance">0</span></p>
+            <div id="transactions">
+                <h3>Transaction History</h3>
+                <ul id="transaction-list"></ul>
+            </div>
+            <div id="transaction-form">
+                <input type="number" id="amount" placeholder="Enter amount" required>
+                <button id="deposit-btn">Deposit</button>
+                <button id="withdraw-btn">Withdraw</button>
+            </div>
+            <button id="logout-btn">Logout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
