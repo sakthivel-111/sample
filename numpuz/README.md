@@ -1,6 +1,6 @@
 3x3 Number Puzzle Game (8-Puzzle)
 A classic 8-Puzzle Game implemented using HTML, CSS, and JavaScript. The objective of the game is to rearrange tiles in the correct order by sliding them into the empty space. The game is won when the tiles are arranged in ascending order from 1 to 8, with the empty space at the bottom-right corner.
-
+//changed with vsc 24/1
 Features
 Playable on Desktop and Mobile: The game is fully responsive, so you can play it on any device.
 Shuffle: The game starts with a randomly shuffled set of tiles.
